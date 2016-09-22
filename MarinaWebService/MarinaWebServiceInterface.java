@@ -8,6 +8,7 @@ import javax.jws.soap.SOAPBinding.Style;
 //Service Endpoint Interface
 @WebService
 @SOAPBinding(style = Style.RPC)
-public interface MarinaWebServiceInterface{
-	@WebMethod String getSailorInfoAsString(String firstName, String lastName, String boatType, int length, int year, String motorType, String feePaid, String assignedSlip);
+public interface MarinaWebServiceInterface{ //defines the prototype of the web service function
+    @WebMethod String getSailorInfoAsString
+        (String firstName, String lastName, String boatType, int length, int year, String motorType, String feePaid, String assignedSlip);
 }
